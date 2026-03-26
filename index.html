@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!-- SEO -->
+    <meta name="description" content="SEMPela — The ultimate short video streaming platform. Watch, like, and share amazing short videos." />
+    <meta name="keywords" content="short videos, video streaming, SEMPela, TikTok alternative" />
+    <meta name="author" content="Josué Sempela" />
+
+    <!-- PWA / Mobile -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SEMPela" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SEMPela — Short Video Platform" />
+    <meta property="og:description" content="Watch and share amazing short videos on SEMPela." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/sempela-logo.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SEMPela — Short Video Platform" />
+    <meta name="twitter:description" content="Watch and share amazing short videos on SEMPela." />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Preload critical logo to improve first-paint for favicons and OG images -->
+    <link rel="preload" as="image" href="/sempela-logo.png" type="image/png" />
+
+    <!-- Inline SVG favicon as fast fallback to avoid network delay on first load -->
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23000%22/%3E%3Ctext x=%2250%25%22 y=%2258%25%22 font-size=%2258%22 font-family=%22Inter,system-ui,%20sans-serif%22 font-weight=%22900%22 fill=%22%23fe2c55%22 text-anchor=%22middle%22%3ES%3C/text%3E%3C/svg%3E' />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/sempela-logo.png" />
+    <link rel="apple-touch-icon" href="/sempela-logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <title>SEMPela</title>
+
+    <style>
+      /* Prevent flash of unstyled content */
+      html, body {
+        background: #000;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
